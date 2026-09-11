@@ -1,38 +1,72 @@
-main {
-    max-width: 840px;
+/* ============================
+   Global Reset / Base Styles
+   ============================ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #222222;
+    line-height: 1.6;
+}
+
+/* ============================
+   Header / Navigation
+   ============================ */
+header {
+    background-color: #2c3e50;
 }
 
 nav {
-    background-color: #333;
-    padding: 10px;
+    display: flex;
 }
 
 nav a {
-    color: #fff;
-    padding: 8px;
+    color: #ffffff;
+    padding: 10px 15px;
     display: block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #34495e;
+}
+
+/* ============================
+   Main Content
+   ============================ */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 h1 {
-    color: #333;
+    color: #2c3e50;
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid #ccc;
+    border: 2px solid #333333;
     padding: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* ============================
+   Aside
+   ============================ */
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    background-color: #f0f0f0;
+    color: #333333;
 }
 
 aside img {
@@ -40,12 +74,19 @@ aside img {
     height: auto;
 }
 
+/* ============================
+   Paragraphs
+   ============================ */
 p {
     padding: 0;
 }
 
+/* ============================
+   Footer
+   ============================ */
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    margin-top: 30px;
+    border-top: 1px solid #cccccc;
     text-align: center;
+    padding: 15px 0;
 }
