@@ -62,7 +62,7 @@ header nav a {
     text-decoration: none;
     font-weight: bold;
     padding: 0.4rem 0.2rem;
-    border-bottom: 3px solid transparent;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 header nav a:hover,
@@ -83,13 +83,14 @@ header nav a:focus {
 
 .hero h1 {
     position: absolute;
-    top: 2rem;
+    top: 0;
     left: 0;
     width: 100%;
+    padding: 1rem;
     text-align: center;
     color: var(--white-color);
+    background-color: var(--primary-color);
     font-size: 2.5rem;
-    text-shadow: 0 2px 8px var(--black-color);
 }
 
 .hero article {
@@ -222,7 +223,7 @@ footer {
     }
 
     .hero h1 {
-        top: 1rem;
+        top: 0;
         font-size: 1.75rem;
     }
 
