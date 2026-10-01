@@ -1,0 +1,53 @@
+body {
+    font-family: Georgia, serif;
+    max-width: 5000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+}
+
+form {
+    background-color: #39b3;
+    padding: 80px;
+    border-radius: 8px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+code {
+    display: block;
+    background-color: #3333b3;
+    color: purple;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: navy;
+    color: aquamarine;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
