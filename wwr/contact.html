@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+      content="Contact Splash White Water Rafting for reservations, questions, and website suggestions.">
+
+    <meta name="author" content="Nyako Mathias Abbas">
+
+    <title>Contact Us | Splash White Water Rafting</title>
+
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/mana-logo.png" alt="Splash White Water Rafting Logo">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="contact-info">
+            <h1>Splash White Water Rafting</h1>
+
+            <address>
+                123 River Road<br>
+                Rexburg, ID 83440<br>
+                Phone: <a href="tel:+12085550123">(208) 555-0123</a><br>
+                Email: <a href="mailto:info@splashrafting.com">info@splashrafting.com</a>
+            </address>
+        </section>
+
+        <section class="contact-main">
+            <div class="map-frame">
+                <!-- Replace this iframe with your own Google Maps embed code.
+                     Remember to delete the inline style="border:0" Google adds. -->
+                <iframe src="https://www.google.com/maps?q=Rexburg,Idaho&amp;output=embed"
+                  title="Map showing the location of Splash White Water Rafting" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form-column">
+                <h2>Send Us a Message</h2>
+
+                <form class="contact-form" action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <fieldset>
+                        <legend>Purpose of your message</legend>
+
+                        <input type="radio" id="general" name="purpose" value="general" required>
+                        <label for="general">General Inquiry</label>
+
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        <label for="reservation">Reservation Question</label>
+
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </fieldset>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Please subscribe me to the monthly
+                            newsletter</label>
+                    </div>
+
+                    <button type="submit">Get in Touch</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="profiles">
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="adventure-gallery profile-gallery">
+                <figure>
+                    <img src="images/employee1.jpg"
+                      alt="Portrait of Samuel Adeyemi, head river guide">
+                    <figcaption>Samuel Adeyemi, Head River Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg"
+                      alt="Portrait of James Carter, operations manager">
+                    <figcaption>James Carter, Operations Manager</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg"
+                      alt="Portrait of Daniel Okafor, reservations coordinator">
+                    <figcaption>Daniel Okafor, Reservations Coordinator</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Splash White Water Rafting | Nyako Mathias Abbas</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Splash white water rafting on Facebook">
+            </a>
+
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png" alt="Splash white water rafting on LinkedIn">
+            </a>
+
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="Splash white water rafting on Instagram">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
