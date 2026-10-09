@@ -206,7 +206,252 @@ footer {
     height: 32px;
 }
 
-/* ---------- Small screens ---------- */
+/* ---------- Call to action ---------- */
+.cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #0b5394;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.cta:hover,
+.cta:focus {
+    background: #073763;
+}
+
+/* ---------- Home page: newsletter ---------- */
+.newsletter {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.newsletter form {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+}
+
+.newsletter button {
+    padding: 0.75rem;
+    background: #0b5394;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ---------- Home page: grid content ---------- */
+.why-raft {
+    padding: 0 1rem;
+    margin: 2rem auto;
+    max-width: 1100px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.grid figure {
+    margin: 0;
+}
+
+.grid img,
+.trip img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+/* ---------- Trips page ---------- */
+.page-title {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.trip-table {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 0.6rem;
+    text-align: left;
+}
+
+thead th {
+    background: #0b5394;
+    color: #fff;
+}
+
+.cta-block {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* ---------- Contact page ---------- */
+
+/* Same centered container as .history, shared by the three contact sections */
+.contact-info,
+.contact-main,
+.profiles {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.contact-main h2,
+.profiles h2 {
+    margin-bottom: 1rem;
+}
+
+/* Company name + address, centered like the wireframe */
+.contact-info {
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-info h1 {
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+
+.contact-info address {
+    font-style: normal;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+}
+
+/* Map on the left, form on the right */
+.contact-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.map-frame iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    border: 0;
+    border-radius: 6px;
+}
+
+/* Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    font: inherit;
+    background-color: var(--white-color);
+}
+
+.contact-form fieldset {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.contact-form fieldset label {
+    margin-right: 1rem;
+    font-weight: normal;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-row label {
+    font-weight: normal;
+}
+
+/* Submit button: large, bold, accent color so it stands out */
+.contact-form button[type="submit"] {
+    align-self: flex-start;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover,
+.contact-form button[type="submit"]:focus {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Employee band: "We Are Here to Serve You" */
+.profiles {
+    margin-bottom: 2rem;
+    background-color: var(--soft-color);
+    border-radius: 8px;
+}
+
+.profiles h2 {
+    text-align: center;
+}
+
+/* Profiles reuse .adventure-gallery; only the image height changes */
+.profile-gallery img {
+    height: 240px;
+}
+
+/* ---------- Small screens (all pages) ---------- */
 @media (max-width: 700px) {
     header {
         grid-template-columns: 1fr;
@@ -254,5 +499,21 @@ footer {
     footer {
         flex-direction: column;
         gap: 0.75rem;
+    }
+
+    .contact-info h1 {
+        font-size: 1.75rem;
+    }
+
+    .contact-main {
+        grid-template-columns: 1fr;
+    }
+
+    .map-frame iframe {
+        min-height: 300px;
+    }
+
+    .profile-gallery figure {
+        flex: 1 1 100%;
     }
 }
